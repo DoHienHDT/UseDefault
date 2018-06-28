@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="06O-Yn-LPC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master View Controller-->
+        <scene sceneID="ZJ2-4G-QWM">
+            <objects>
+                <viewController id="06O-Yn-LPC" customClass="MasterViewController" customModule="UseDefault" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ajn-nM-gIv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqE-w9-LzE">
+                                <rect key="frame" x="264.5" y="485.5" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="button:" destination="06O-Yn-LPC" eventType="touchUpInside" id="RGe-2g-OAC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KTK-hr-ift">
+                                <rect key="frame" x="0.0" y="318.5" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4go-tD-Y0U">
+                                <rect key="frame" x="102.5" y="485.5" width="45" height="30"/>
+                                <state key="normal">
+                                    <string key="title" base64-UTF8="YES">
+EERlbGV0ZQ
+</string>
+                                </state>
+                                <connections>
+                                    <action selector="buttonDelete:" destination="06O-Yn-LPC" eventType="touchUpInside" id="m2B-dB-LzP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78560632195953917" green="1" blue="0.73937685568962164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4go-tD-Y0U" firstAttribute="centerY" secondItem="Ajn-nM-gIv" secondAttribute="centerY" multiplier="3/2" id="5e1-WV-CI7"/>
+                            <constraint firstItem="KTK-hr-ift" firstAttribute="leading" secondItem="tBK-1z-GHE" secondAttribute="leading" id="HSs-Z8-84u"/>
+                            <constraint firstItem="4go-tD-Y0U" firstAttribute="centerX" secondItem="Ajn-nM-gIv" secondAttribute="centerX" multiplier="2/3" id="SCS-RW-jOq"/>
+                            <constraint firstItem="tBK-1z-GHE" firstAttribute="trailing" secondItem="KTK-hr-ift" secondAttribute="trailing" id="UGv-h3-0O7"/>
+                            <constraint firstItem="sqE-w9-LzE" firstAttribute="centerY" secondItem="Ajn-nM-gIv" secondAttribute="centerY" multiplier="3/2" id="ezk-Kf-2DO"/>
+                            <constraint firstItem="KTK-hr-ift" firstAttribute="centerX" secondItem="Ajn-nM-gIv" secondAttribute="centerX" id="gqi-L3-Ye6"/>
+                            <constraint firstItem="KTK-hr-ift" firstAttribute="centerY" secondItem="Ajn-nM-gIv" secondAttribute="centerY" id="hpT-Zq-2Ja"/>
+                            <constraint firstItem="sqE-w9-LzE" firstAttribute="centerX" secondItem="Ajn-nM-gIv" secondAttribute="centerX" multiplier="3/2" id="pXo-f9-kpK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tBK-1z-GHE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZTF-nv-ZtT"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="KTK-hr-ift" id="ZFV-oX-OMp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGN-Q1-klt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="99"/>
+        </scene>
+    </scenes>
+</document>
